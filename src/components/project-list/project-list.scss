@@ -1,0 +1,55 @@
+.project-list {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 100px auto;
+  align-items: stretch;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    grid-column: 1 / -1;
+    padding: 20px;
+
+    background-color: #db4c3f;
+  }
+
+  &__title {
+    margin: 0;
+    // margin-bottom: 32px;
+
+    font-size: 36px;
+    line-height: 1.2em;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  &__list {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+
+    background-color: #fafafa;
+  }
+
+  &__wrapper {
+    flex-grow: 1;
+    overflow-y: auto;
+  }
+
+  &__add-btn {
+    margin-top: auto;
+    margin-left: auto;
+  }
+
+  &__tasks {
+    padding: 20px;
+
+    p {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.editable-field {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  padding: 5px;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:hover {
+    background-color: #ececec;
+
+    transition: background-color 0.3s ease-in-out;
+  }
+
+  &__name {
+    flex-grow: 1;
+    padding: 5px;
+    margin: 5px;
+
+    cursor: pointer;
+
+    &--no-pointer {
+      cursor: default;
+    }
+
+    &:focus {
+      outline-width: 0.5px;
+      outline-color: #db4c3f;
+    }
+  }
+}
